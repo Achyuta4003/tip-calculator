@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="container">
+        <!-- *********************************   input section ***************************************************** -->
+        <div class="input">
+          <h1>Tip Calculator</h1>
+          <form id="form">
+            <div class="display_box">
+              <span class="currency ">$</span>
+              
+              <input type="number" name="inputBill" id="inputBill" min="0" />
+            </div>
+          </form>
+          <div>
+            <div class="tip_box">
+              Tip:
+              <input
+              type="range"
+              name="tip"
+              id="percentage"
+              min="0"
+              max="100"
+              step="1"
+              />
+              <span id="percentageOutput" class="tip">150%</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        
+        <!-- *********************************   output section ***************************************************** -->
+        <div class="output">
+          <h2>Results</h2>
+          <div>
+            <div class="result_box">
+              <span class="p5 br1">Tip amount</span
+                ><span id="tipOutput" class="p5"></span>
+              </div>
+          </div>
+          <div>
+            <div class="result_box">
+              <span class="p5 br1">Total Bill with Tip</span
+                ><span id="totalBill" class="p5"></span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</body>
+<script src="main.js"></script>
+</html>
